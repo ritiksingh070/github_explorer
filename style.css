@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    /* text-decoration: none; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.main{
+    width: 80%;
+    /* border: 2px solid black; */
+    height: fit-content;
+    margin: 30px auto;
+   
+}
+.main .search{
+    width: 60%;
+    margin: auto;
+}
+.main .search {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.main .info{
+    width: 80%;
+    height: fit-content;
+ background-color: black;
+    /* border: 2px solid rgb(44, 43, 43); */
+    margin:  auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    /* background-color: bisque; */
+}
+.main .info .pic{
+    width: 30%;
+    margin:   15px auto;
+    /* border: 2px solid black; */
+}
+img{
+    /* border:2px solid black; */
+    width: 150px;
+    margin: 0 20px;
+    border-radius: 50%;
+    float: right;
+}
+.main .info .details{
+    margin: 10px;
+    width: 80%;
+    height: fit-content;
+    /* border: 2px solid black; */
+}
+.main .info .details ul{
+    width: fit-content;
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 0;
+}
+.main .info .details ul li{
+    margin: 0 5px 0 0;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+h2{
+    margin: 5px 10px;
+}
+p{
+    margin: 0 10px;
+    font-size: 18px;
+
+}
+#repos{
+    /* border: 2px solid black; */
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto ;
+    border-radius: 10px;
+   
+}
+
+#repos .repo{
+   
+    padding: 5px;
+    /* width: fit-content; */
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    text-align: center;
+}
+
+#repos a{
+    list-style: none;
+    text-decoration: none;
+    list-style: none;
+    margin: 5px 10px;
+    font-size: 15px;
+    color: white;
+}
+#repos a:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    /* background-color: greenyellow; */
+}
+
+@media only screen and (max-device-width: 480px){
+    .main {
+        width: 100%;
+        flex-direction: column;
+        /* border:2px solid black; */
+    }
+    .main .search {
+        width: 70%;
+        /* border:2px solid black; */
+    }
+    .main .info{
+        width: 80%;
+        display: flex;
+        /* background-color: red; */
+        flex-direction: column;
+        border:2px solid black;
+    }
+    .main .info .pic{
+        width: 30%;
+        margin: 20px auto;
+    }
+    img{
+        margin: 0 -30px;
+    }
+    .main .info .details{
+        width: 100%;
+        padding: 5px;
+        margin: 20px auto;
+    }
+    .main .info .details ul{
+        width: 100%;
+        
+    }
+    h2{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .main .info .details ul li{
+        font-size: 13px;  
+    }
+    #repos{
+        /* border: 2px solid black; */
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto ;
+        border-radius: 10px;
+       
+    }
+    
+    #repos .repo{
+       font-size: 14px;
+        padding: 3px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+ @media only screen and (max-device-width: 767px) {
+    .main {
+        width: 80%;
+        flex-direction: column;
+        /* border:2px solid black; */
+    }
+    .main .search {
+        width: 80%;
+        /* border:2px solid black; */
+    }
+    .main .info{
+        width: 100%;
+        display: flex;
+        /* background-color: red; */
+        flex-direction: row;
+        border:2px solid black;
+    }
+    .main .info .pic{
+        width: 30%;
+        margin: 20px auto;
+    }
+    
+    .main .info .details{
+        width: 100%;
+        padding: 5px;
+        margin: 20px auto;
+    }
+    .main .info .details ul{
+        width: 100%;
+        
+    }
+    h2{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .main .info .details ul li{
+        font-size: 13px;  
+    }
+    #repos{
+        /* border: 2px solid black; */
+        width: fit-content;
+        height: fit-content;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto ;
+        border-radius: 10px;
+       
+    }
+    
+    #repos .repo{
+       font-size: 14px;
+        padding: 3px;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+  
+/* Media Query for Tablets Ipads portrait mode */
+/* @media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+} */
+  
